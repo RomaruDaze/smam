@@ -57,7 +57,25 @@ nav li a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 0;
+}
+
+.about-us {
+    height: 70vh;
+    background-color: #8b8b8b;
+}
+
+.our-products {
+    height: 70vh;
+}
+
+.our-services {
+    height: 70vh;
+    background-color: #8b8b8b;
+}
+
+.contact-us {
+    height: 70vh;
 }
 
 footer {
