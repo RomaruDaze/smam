@@ -87,6 +87,62 @@ nav li a:hover {
     color: #f67300;
 }
 
+#country-toggle {
+    position: relative;
+    display: inline-block;
+}
+
+#country-toggle img {
+    transition: opacity 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+#country-toggle:hover img {
+    opacity: 0;
+    /* Hide the American flag on hover */
+}
+
+#country-toggle:hover::after {
+    content: '';
+    background-image: url('https://img.icons8.com/color/48/indonesia.png');
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    /* Optional: to make it circular */
+}
+
+.dropdown-content {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    background-color: white;
+    /* Background color for dropdown */
+    border: 1px solid #ccc;
+    /* Optional border */
+    border-radius: 5px;
+    /* Optional rounded corners */
+    z-index: 1;
+    /* Ensure dropdown is above other content */
+    margin-top: 5px;
+    /* Space between the toggle and dropdown */
+}
+
+#country-toggle:hover .dropdown-content {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.dropdown-content img {
+    cursor: pointer;
+    /* Change cursor to pointer for clickable image */
+    padding: 5px;
+    /* Optional padding */
+}
+
 main {
     margin: 0;
     padding: 0;
