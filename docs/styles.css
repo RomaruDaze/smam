@@ -117,30 +117,21 @@ nav li a:hover {
 
 .dropdown-content {
     display: none;
-    /* Hide dropdown by default */
     position: absolute;
     background-color: white;
-    /* Background color for dropdown */
     border: 1px solid #ccc;
-    /* Optional border */
     border-radius: 5px;
-    /* Optional rounded corners */
     z-index: 1;
-    /* Ensure dropdown is above other content */
     margin-top: 5px;
-    /* Space between the toggle and dropdown */
 }
 
 #country-toggle:hover .dropdown-content {
     display: block;
-    /* Show dropdown on hover */
 }
 
 .dropdown-content img {
     cursor: pointer;
-    /* Change cursor to pointer for clickable image */
     padding: 5px;
-    /* Optional padding */
 }
 
 main {
@@ -278,15 +269,21 @@ main {
     background-color: var(--secondary);
 }
 
+.our-products-content button:hover {
+    background-color: #f8f8f8;
+    color: var(--secondary);
+}
+
 .our-products-image {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 .product-image {
-    background-color: #fff;
+    background-color: #f8f8f8;
     margin: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -330,7 +327,7 @@ main {
 
 .product-image-content button {
     color: var(--secondary);
-    background-color: #fff;
+    background-color: #f8f8f8;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -339,14 +336,44 @@ main {
     border-radius: 5px;
 }
 
-/* Our Services */
-.our-services-simple {
-    background-color: green;
+.product-image-content button:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* Our Projects */
+.our-projects-simple {
+    background-color: #f8f8f8;
     padding: 20px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.our-projects-simple h2 {
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 10px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.projects-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
 }
 
 .contact-us-simple {
-    background-color: yellow;
+    background-color: var(--secondary);
     padding: 20px;
 }
 
